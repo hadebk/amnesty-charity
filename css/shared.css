@@ -1,0 +1,19 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf');
+}
+
+:root {
+    --headlineFont: 'Yeseva One', Arial, Helvetica, sans-serif;
+    --bodyFont: 'Open Sans', Arial, Helvetica, sans-serif;
+    --lightMainColor:#3CC88F;
+    --darkMainColor:#25283A;
+    --typoSecondaryColor:#aaabaf;
+}
+
+.row{
+   padding-left: 0;
+   padding-right: 0;
+}

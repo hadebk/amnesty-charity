@@ -1,0 +1,9 @@
+@import "./shared.css";
+
+*{
+    font-family:var(--headlineFont);
+}
+
+body{
+    height: 1500px;
+}
