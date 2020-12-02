@@ -5,6 +5,11 @@
     src: url('../fonts/Yeseva_One/YesevaOne-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
 :root {
     --headlineFont: 'Yeseva One', Arial, Helvetica, sans-serif;
     --bodyFont: 'Open Sans', Arial, Helvetica, sans-serif;

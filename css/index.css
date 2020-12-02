@@ -1,9 +1,297 @@
 @import "./shared.css";
 
-*{
-    font-family:var(--headlineFont);
-}
-
-body{
+body {
     height: 1500px;
 }
+
+/* start contact section at top of page */
+.contact_top {
+    background-color: var(--darkMainColor);
+    padding: 15px 0;
+    font-family: var(--bodyFont);
+    color: var(--typoSecondaryColor);
+    font-size: 14px;
+}
+
+.social_buttons span {
+    margin-right: 15px;
+}
+
+.social_buttons a {
+    margin-right: 10px;
+    cursor: pointer;
+    color: var(--typoSecondaryColor);
+}
+
+.social_buttons a:hover>i {
+    color: var(--lightMainColor) !important;
+}
+
+.phone_mail_contact div span i {
+    margin-right: 5px;
+    color: var(--lightMainColor);
+}
+
+.contact_phone {
+    margin-right: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .contact_top {
+        text-align: center;
+    }
+
+    .social_buttons {
+        margin-bottom: 10px;
+    }
+
+    .phone_mail_contact div {
+        margin-bottom: 5px;
+    }
+}
+
+/* end contact section at top of page */
+
+/* start navbar section at top of page */
+.navbar_wrapper {
+    background-color: white;
+    font-family: var(--bodyFont);
+}
+
+.navbar_wrapper .navbar {
+    background-color: white !important;
+}
+
+nav #navbarNavAltMarkup .navbar-nav a {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--darkMainColor);
+    margin-left: 30px;
+}
+
+nav #navbarNavAltMarkup .navbar-nav a:hover {
+    color: var(--lightMainColor);
+}
+
+nav #navbarNavAltMarkup .donate_button_navbar {
+    background: var(--lightMainColor);
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 30px;
+    text-align: center;
+    transition: all ease-in-out .2s;
+}
+
+nav #navbarNavAltMarkup .donate_button_navbar:hover {
+    background-color: var(--darkMainColor);
+}
+
+
+nav #navbarNavAltMarkup .donate_button_navbar a {
+    color: white;
+}
+
+nav #navbarNavAltMarkup .donate_button_navbar a:hover {
+    text-decoration: none;
+}
+
+/* style menu button in mobile view */
+.navbar-light .navbar-toggler {
+    border: 0;
+    outline: 0;
+}
+
+.navbar-light .navbar-toggler:focus {
+    border: 0;
+    outline: 0;
+}
+
+.navbar-light .navbar-toggler i {
+    color: var(--darkMainColor);
+    font-size: 25px;
+}
+
+/* end navbar section at top of page */
+
+/* start slideshow edit */
+
+.carousel-item .carousel-caption {
+    transform: translateY(50%);
+    bottom: 50%;
+}
+
+.carousel-item .carousel-caption h5 {
+    font-family: var(--headlineFont);
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.carousel-item .carousel-caption p {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.carousel-item img {
+    filter: brightness(0.5);
+}
+
+@media screen and (max-width:767px) {
+
+    .carousel-item img {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .carousel-item .carousel-caption h5 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .carousel-item .carousel-caption p {
+        font-size: 14px;
+    }
+}
+
+/* start 'who we are' section */
+
+.who_we_are_wrapper {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.who_we_are_wrapper .left_part h3 {
+    font-family: var(--headlineFont);
+    font-size: 48px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--darkMainColor);
+    margin-bottom: 20px;
+}
+
+.who_we_are_wrapper .left_part p {
+    font-size: 16px;
+    color: var(--darkMainColor);
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+.who_we_are_wrapper .left_part .who_we_are_button {
+    background: var(--lightMainColor);
+    padding: 12px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .2s;
+    display: inline-block;
+}
+
+.who_we_are_wrapper .left_part .who_we_are_button:hover {
+    background-color: var(--darkMainColor);
+}
+
+
+.who_we_are_wrapper .left_part .who_we_are_button a {
+    color: white;
+}
+
+.who_we_are_wrapper .left_part .who_we_are_button a:hover {
+    text-decoration: none;
+}
+
+.who_we_are_wrapper .right_part img {
+    width: 100%;
+    object-fit: cover;
+    height: 85%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .who_we_are_wrapper{
+        padding-bottom: 70px;
+    }
+    .who_we_are_wrapper .left_part h3 {
+        font-size: 36px;
+    }
+
+    .who_we_are_wrapper .left_part {
+        margin-bottom: 30px;
+    }
+}
+
+/* end 'who we are' section */
+
+/* start 'latest news section */
+
+.latest_news_wrapper {
+    margin-bottom: 100px;
+}
+
+.latest_news_wrapper h3 {
+    font-family: var(--headlineFont);
+    font-size: 48px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--darkMainColor);
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.latest_news_wrapper .card {
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+.latest_news_wrapper .card img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.latest_news_wrapper .card .card-body {
+    min-height: 285px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.latest_news_wrapper .card .card-body .card-date i {
+    color: var(--lightMainColor);
+    margin-right: 10px;
+}
+
+.latest_news_wrapper .card .card-body .card-date span {
+    font-size: 16px;
+    color: var(--darkMainColor);
+    line-height: 1.7em;
+    font-weight: 600;
+}
+
+.latest_news_wrapper .card .card-body .card-title {
+    font-family: var(--headlineFont);
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--darkMainColor);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.latest_news_wrapper .card .card-body .card-text {
+    font-size: 16px;
+    color: var(--darkMainColor);
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+    .latest_news_wrapper h3 {
+        font-size: 36px;
+    }
+}
+    /* end 'latest news section */
+
+    /* end slideshow edit */
