@@ -1,4 +1,28 @@
 $(document).ready(function () {
+  // init carousal in 'our VOLUNTEER' section
+  $(".team-carousal").owlCarousel({
+    loop: true,
+    nav: false,
+    autoplay: true,
+    margin: 10,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      500: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
   // init carousal in 'our blogs' section
   $(".owl-carousel").owlCarousel({
     loop: true,

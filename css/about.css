@@ -110,60 +110,30 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     font-size: 25px;
 }
 
-/* end navbar section at top of page */
+/* end navbar section at top of page --------------------------------------------------------*/
 
-/* start slideshow edit */
-
-.carousel-item .carousel-caption {
-    transform: translateY(50%);
-    bottom: 50%;
-}
-
-.carousel-item .carousel-caption h5 {
-    font-family: var(--headlineFont);
-    font-size: 64px;
-    margin-bottom: 20px;
-    color: #ffffff;
-}
-
-.carousel-item .carousel-caption p {
-    font-size: 20px;
-    line-height: 1.6em;
-    color: #ffffff;
-    font-weight: 400;
-}
-
-.carousel-item img {
-    filter: brightness(0.5);
-}
-
-@media screen and (max-width:767px) {
-
-    .carousel-item img {
-        object-fit: cover;
-        height: 300px;
-    }
-
-    .carousel-item .carousel-caption h5 {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-
-    .carousel-item .carousel-caption p {
-        font-size: 14px;
-    }
-}
-
-/* end slideshow edit */
 
 /* start 'who we are' section */
 
-.who_we_are_wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
+.what_we_do_wrapper{
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.who_we_are_wrapper .left_part h3 {
+.title_box {
+    margin-bottom: 80px;
+}
+
+.title_box .hint1{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--bodyFont);
+    letter-spacing: 1px;
+    color: var(--lightMainColor);
+}
+
+.title_box h3{
     font-family: var(--headlineFont);
     font-size: 48px;
     line-height: 1.2em;
@@ -173,14 +143,88 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     margin-bottom: 20px;
 }
 
-.who_we_are_wrapper .left_part p {
+.title_box .hint2{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--bodyFont);
+    letter-spacing: 1px;
+    color: var(--darkMainColor);
+}
+
+.what_we_do_wrapper .services{
+    margin-bottom: 30px;
+}
+
+.what_we_do_wrapper .service_box .icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.what_we_do_wrapper .service_box .icon img{
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.what_we_do_wrapper .service_box h5{
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: var(--headlineFont);
+    color: var(--darkMainColor);
+}
+
+.what_we_do_wrapper .service_box p{
+    font-size: 15px;
+    color: var(--darkMainColor);
+    line-height: 1.7em;
+    font-weight: 400;
+}
+
+@media screen and (max-width:767px) {
+    .title_box h3 {
+        font-size: 36px;
+    }
+
+    .what_we_do_wrapper .service_box{
+        margin-bottom: 20px;
+    }
+
+    .what_we_do_wrapper .service_box .icon{
+        margin: 0 auto 20px;
+    }
+
+    .what_we_do_wrapper .service_box h5{
+        text-align: center;
+    }
+}
+
+/* end 'who we are' section */
+
+/* start 'our mission' section */
+
+.our_mission_wrapper {
+    padding-bottom: 100px;
+}
+
+.our_mission_wrapper .left_part h3 {
+    font-family: var(--headlineFont);
+    font-size: 48px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--darkMainColor);
+    margin-bottom: 20px;
+}
+
+.our_mission_wrapper .left_part p {
     font-size: 16px;
     color: var(--darkMainColor);
     line-height: 1.7em;
     font-weight: 400;
 }
 
-.who_we_are_wrapper .left_part .who_we_are_button {
+.our_mission_wrapper .left_part .our_mission_button {
     background: var(--lightMainColor);
     padding: 12px 22px;
     border-radius: 50px;
@@ -190,20 +234,20 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     display: inline-block;
 }
 
-.who_we_are_wrapper .left_part .who_we_are_button:hover {
+.our_mission_wrapper .left_part .our_mission_button:hover {
     background-color: var(--darkMainColor);
 }
 
 
-.who_we_are_wrapper .left_part .who_we_are_button a {
+.our_mission_wrapper .left_part .our_mission_button a {
     color: white;
 }
 
-.who_we_are_wrapper .left_part .who_we_are_button a:hover {
+.our_mission_wrapper .left_part .our_mission_button a:hover {
     text-decoration: none;
 }
 
-.who_we_are_wrapper .right_part img {
+.our_mission_wrapper .right_part img {
     width: 100%;
     object-fit: cover;
     height: 85%;
@@ -211,150 +255,93 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 }
 
 @media screen and (max-width:767px) {
-    .who_we_are_wrapper {
+    .our_mission_wrapper {
         padding-bottom: 70px;
+        padding-top: 0;
     }
 
-    .who_we_are_wrapper .left_part h3 {
+    .our_mission_wrapper .left_part h3 {
         font-size: 36px;
     }
 
-    .who_we_are_wrapper .left_part {
+    .our_mission_wrapper .left_part {
         margin-bottom: 30px;
         text-align: center;
     }
 }
 
-/* end 'who we are' section */
+/* end 'our mission' section */
 
-/* start 'latest news section */
-
-.latest_news_wrapper {
+/* start 'Volunteer' section */
+.volunteer_wrapper{
     margin-bottom: 100px;
 }
 
-.latest_news_wrapper h3 {
+.volunteer_wrapper .card .card-body h5{
     font-family: var(--headlineFont);
-    font-size: 48px;
-    line-height: 1.2em;
+    color: var(--darkMainColor);
+    font-size: 24px;
     font-weight: 400;
     text-transform: capitalize;
-    color: var(--darkMainColor);
-    margin-bottom: 80px;
     text-align: center;
 }
 
-.latest_news_wrapper .card {
-    margin-bottom: 40px;
+.volunteer_wrapper .card{
     border-radius: 20px;
 }
 
-.latest_news_wrapper .card img {
+.volunteer_wrapper .card .card-img-top{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.latest_news_wrapper .card .card-body {
-    min-height: 285px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-.latest_news_wrapper .card .card-body .card-date i {
-    color: var(--lightMainColor);
-    margin-right: 10px;
-}
-
-.latest_news_wrapper .card .card-body .card-date span {
-    font-size: 16px;
-    color: var(--darkMainColor);
-    line-height: 1.7em;
-    font-weight: 600;
-}
-
-.latest_news_wrapper .card .card-body .card-title {
-    font-family: var(--headlineFont);
-    font-size: 24px;
-    font-weight: 400;
-    color: var(--darkMainColor);
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-.latest_news_wrapper .card .card-body .card-text {
-    font-size: 16px;
-    color: var(--darkMainColor);
-    line-height: 1.7em;
-    font-weight: 400;
-}
-
-@media screen and (max-width: 767px) {
-    .latest_news_wrapper h3 {
-        font-size: 36px;
-    }
-}
-
-/* end 'latest news section */
-
-/* start 'our blogs' section */
-.blog_wrapper {
-    margin-bottom: 100px;
-}
-
-.blog_wrapper h3 {
-    font-family: var(--headlineFont);
-    font-size: 48px;
-    line-height: 1.2em;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--darkMainColor);
-    margin-bottom: 80px;
+.volunteer_wrapper .card .card-body p{
     text-align: center;
+    color: var(--typoSecondaryColor);
+    font-size: 15px;
 }
 
-.blog_box .blog_left_part h4 {
-    font-family: var(--headlineFont);
-    line-height: 1.2em;
-    font-weight: 400;
-    color: var(--darkMainColor);
-    margin-bottom: 0;
+.volunteer_wrapper #social-icons {
+    margin-top: 30px;
+    height: 35px;
 }
 
-.blog_box .blog_left_part p {
-    font-size: 16px;
-    color: var(--darkMainColor);
-    line-height: 1.7em;
-    font-weight: 400;
-    margin-top: 20px;
+.volunteer_wrapper #social-icons div {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
 }
 
-.blog_box .blog_right_part .blog_comment_box {
-    margin-bottom: 20px;
-}
-
-.blog_box .blog_right_part .blog_comment_box .user_image {
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.blog_box .blog_right_part .blog_comment_box img {
-    border-radius: 50%;
+.volunteer_wrapper #social-icons div>div {
+    float: left;
+    padding-right: 20px;
     width: 50px;
 }
 
-.blog_box .blog_right_part .blog_comment_box .user_data h6 {
-    margin-bottom: 0;
+.volunteer_wrapper #social-icons a:hover {
+    text-decoration: none;
 }
 
-.blog_box .blog_right_part .blog_comment_box .user_data span {
-    font-size: 12px;
-    margin-bottom: 10px;
-    display: inline-block;
+.volunteer_wrapper #social-icons i {
+    background-color: var(--lightMainColor);
+    color: #fff;
+    display: flex;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
-.blog_box .blog_right_part .blog_comment_box .user_data p {
-    font-size: 14px;
-    color: var(--darkMainColor);
+.volunteer_wrapper #social-icons i:hover {
+    cursor: pointer;
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -365,60 +352,17 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 .owl-dots button.owl-dot:focus {
     outline: none;
 }
+/* start 'Volunteer' section */
 
-@media screen and (max-width: 767px) {
-    .blog_wrapper h3 {
-        font-size: 36px;
-    }
 
-    .blog_box .blog_left_part {
-        margin-bottom: 30px;
-    }
-}
 
-/* end 'our blogs' section */
 
-/* start 'our sponsor' section */
 
-.sponsor_wrapper {
-    margin-bottom: 100px;
-}
 
-.sponsor_wrapper h3 {
-    font-family: var(--headlineFont);
-    font-size: 48px;
-    line-height: 1.2em;
-    font-weight: 400;
-    text-transform: capitalize;
-    color: var(--darkMainColor);
-    margin-bottom: 80px;
-    text-align: center;
-}
 
-.sponsor_wrapper h3 i {
-    color: var(--lightMainColor);
-    margin-left: 10px;
-}
 
-.sponsor_box {
-    margin-bottom: 50px;
-}
 
-.sponsor_box img {
-    height: 100px;
-    width: 100%;
-    object-fit: contain;
-}
-
-@media screen and (max-width: 767px) {
-    .sponsor_wrapper h3 {
-        font-size: 36px;
-    }
-}
-
-/* end 'our sponsor' section */
-
-/* start 'footer' */
+/* start 'footer' ------------------------------------------------------------------------------*/
 
 #contactus-box {
     background-color: var(--footerBackground);
