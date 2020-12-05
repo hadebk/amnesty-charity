@@ -292,6 +292,8 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 
 .gallery_wrapper .image_box img{
     border-radius: 20px;
+    max-height: 450px;
+    object-fit: cover;
 }
 
 .owl-theme .owl-dots .owl-dot.active span,
@@ -305,6 +307,11 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 
 .owl-carousel.owl-drag .owl-item{
     overflow: hidden;
+    border-radius: 20px;
+}
+
+.owl-carousel .owl-stage-outer{
+    max-height: 450px;
     border-radius: 20px;
 }
 

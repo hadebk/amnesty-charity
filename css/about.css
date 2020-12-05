@@ -319,6 +319,10 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     width: 50px;
 }
 
+.volunteer_wrapper #social-icons div>div:last-child{
+    padding-right: 0;
+}
+
 .volunteer_wrapper #social-icons a:hover {
     text-decoration: none;
 }
