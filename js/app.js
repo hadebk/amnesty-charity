@@ -1,5 +1,20 @@
 $(document).ready(function () {
-  // init carousal in 'our VOLUNTEER' section
+  // init carousal in 'events gallery' section in event page
+  $(".events_gallery").owlCarousel({
+    loop: true,
+    nav: false,
+    autoplay: false,
+    margin:20,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  // init carousal in 'our VOLUNTEER' section in about page
   $(".team-carousal").owlCarousel({
     loop: true,
     nav: false,
@@ -23,7 +38,7 @@ $(document).ready(function () {
     },
   });
 
-  // init carousal in 'our blogs' section
+  // init carousal in 'our blogs' section in home page
   $(".owl-carousel").owlCarousel({
     loop: true,
     nav: false,
