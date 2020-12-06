@@ -212,6 +212,9 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     .what_we_do_wrapper .service_box h5{
         text-align: center;
     }
+    .what_we_do_wrapper .service_box p{
+        text-align: center;
+    }
 }
 
 /* end 'who we are' section */
