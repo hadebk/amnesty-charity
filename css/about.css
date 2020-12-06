@@ -120,6 +120,13 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
     margin-bottom: 100px;
 }
 
+.what_we_do_wrapper .image_box img{
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 .title_box {
     margin-bottom: 80px;
 }

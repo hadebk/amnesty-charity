@@ -267,9 +267,8 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 
 .latest_news_wrapper .card .card-body .card-date span {
     font-size: 16px;
-    color: var(--darkMainColor);
+    color: var(--typoSecondaryColor);
     line-height: 1.7em;
-    font-weight: 600;
 }
 
 .latest_news_wrapper .card .card-body .card-title {
