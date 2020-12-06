@@ -193,6 +193,14 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
         font-size: 36px;
     }
 
+    .what_we_do_wrapper{
+        margin-bottom: 50px;
+    }
+
+    .what_we_do_wrapper .services{
+        margin-bottom: 0;
+    }
+
     .what_we_do_wrapper .service_box{
         margin-bottom: 20px;
     }
