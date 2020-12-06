@@ -112,6 +112,7 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 
 /* end navbar section at top of page --------------------------------------------------------*/
 
+/* start title section */
 .title_wrapper{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -210,7 +211,7 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 .main_content_wrapper .right_part label{
     font-family: var(--bodyFont);
     color: var(--darkMainColor);
-    line-height: 24px;
+    line-height: 24px; 
     margin-bottom: 10px;
     font-weight: 400;
     font-size: 15px;

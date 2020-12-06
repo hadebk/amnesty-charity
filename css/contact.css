@@ -112,14 +112,198 @@ nav #navbarNavAltMarkup .donate_button_navbar a:hover {
 
 /* end navbar section at top of page --------------------------------------------------------*/
 
+/* start title section */
+.title_wrapper{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.title_box {
+    margin-bottom: 80px;
+}
+
+.title_box .hint1{
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    font-family: var(--bodyFont);
+    letter-spacing: 1px;
+    color: var(--lightMainColor);
+}
+
+.title_box h3{
+    font-family: var(--headlineFont);
+    font-size: 48px;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--darkMainColor);
+    margin-bottom: 20px;
+}
+
+.title_box .hint2{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--bodyFont);
+    letter-spacing: 1px;
+    color: var(--darkMainColor);
+}
+
+@media screen and (max-width:767px) {
+    .title_box h3 {
+        font-size: 36px;
+    }
+}
+/* end title section */
+
+/* start contacts_wrapper section */
+.contacts_wrapper{
+    margin-bottom: 80px;
+}
+
+.contacts_wrapper .contact_card{
+    padding: 60px 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contacts_wrapper .contact_card i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contacts_wrapper .contact_card h5{
+    font-family: var(--headlineFont);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    margin: 0 0px 20px;
+}
+
+.contacts_wrapper .contact_card p{
+    margin-bottom: 0;
+    font-family: var(--bodyFont);
+}
+
+@media screen and (max-width:991px) {
+    .contacts_wrapper .contact_card {
+        margin-bottom: 20px;
+    }
+}
+/* end contacts_wrapper section */
 
 
+/* start 'map_form_wrapper' section */
+.map_form_wrapper{
+    margin-bottom: 0;
+}
+
+.map_form_wrapper .left_part form input{
+    padding: 15px 20px;
+}
+
+.map_form_wrapper .left_part form  textarea{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    resize: none;
+    padding: 15px 20px;
+}
+
+.map_form_wrapper .left_part form  textarea:focus{
+    outline: 0
+}
 
 
+.map_form_wrapper form button{
+    background: var(--lightMainColor);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .2s;
+    border: 0;
+    outline: 0;
+    width: 200px;
+    margin: 30px auto 80px;
+    font-weight: 600;
+}
+
+.map_form_wrapper form button:hover {
+    background-color: var(--darkMainColor);
+}
+
+.map_form_wrapper form button:focus {
+    background-color: var(--darkMainColor);
+}
+
+.map_form_wrapper .right_part{
+    min-height: 400px;
+}
+/* end 'map_form_wrapper' section */
 
 
+/* start 'become a volunteer' section */
+.become_volunteer_wrapper{
+    background-color: var(--becomeAVolunteer);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 
+.become_volunteer_wrapper h3{
+    font-size: 48px;
+    line-height: 1.25em;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: var(--headlineFont);
+}
 
+.get_involved__button {
+    background: #fff;
+    padding: 12px 50px;
+    border-radius: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease-in-out .2s;
+    display: inline-block;
+}
+
+.get_involved__button:hover {
+    background-color: var(--darkMainColor);
+}
+
+.get_involved__button:hover > a{
+    color: #fff;
+}
+
+.get_involved__button a {
+    color: var(--darkMainColor);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.get_involved__button a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width:767px) {
+    .become_volunteer_wrapper h3{
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .become_volunteer_wrapper .row{
+        justify-content: center !important;
+    }
+}
+/* end 'become a volunteer' section */
 
 /* start 'footer' ------------------------------------------------------------------------------*/
 
